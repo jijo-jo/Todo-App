@@ -9,8 +9,11 @@ require('dotenv').config();
 
 
 var corsOptions = {
-  origin: "*",
-  methods: "GET,PUT,POST,DELETE",
+  origin: 'https://todo-app-seven-chi-10.vercel.app',
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+  credentials: true, 
+  optionsSuccessStatus: 204
+
   };
   app.use(cors(corsOptions));
 
