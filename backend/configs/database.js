@@ -39,7 +39,7 @@ const {Sequelize} = require("sequelize");
 // }
 // );
 
-const db = new Sequelize(process.env.DATABASE_URL, {
+const db = new Sequelize("postgres://default:9ZaGJtTwW6DY@ep-floral-glitter-a13kocna-pooler.ap-southeast-1.aws.neon.tech:5432/verceldb?sslmode=require", {
     dialect: 'postgres',
     protocol: 'postgres',
     dialectOptions: {
