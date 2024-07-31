@@ -29,7 +29,6 @@ const UserWelcome = ({getdata}) => {
          getdata()
      })
      .catch((error)=>{
-        alert("Project adding Unsucceffull")
         console.log(error);
      })
   }

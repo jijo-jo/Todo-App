@@ -48,7 +48,6 @@ const CalendarSheet = (props) => {
        
     })
     .catch((error)=>{
-       alert("Task fetch Unsucceffull")
        console.log(error);
     })
    }
@@ -87,7 +86,6 @@ const CalendarSheet = (props) => {
         setIsModalOpenTak(false);
       })
       .catch((error) => {
-        alert("Task adding unsuccessful");
         console.log(error);
       });
   };

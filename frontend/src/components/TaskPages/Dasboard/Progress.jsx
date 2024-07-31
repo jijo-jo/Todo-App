@@ -32,7 +32,6 @@ const Progress = (props) => {
         props.setAlltask(filterdata);   
     })
     .catch((error)=>{
-       alert("Task fetch Unsucceffull")
        console.log(error);
     })
    }

@@ -21,7 +21,6 @@ const TaskCard = ({ task , imgsrc , page }) => {
           window.location.reload()
       })
       .catch((error)=>{
-         alert("Task delete Unsucceffull")
          console.log(error);
       })
 

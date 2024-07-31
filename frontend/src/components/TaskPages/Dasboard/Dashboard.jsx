@@ -29,7 +29,6 @@ const Dashboard = (props)=>{
          props.setProjects(response.data);
      })
      .catch((error)=>{
-        alert("Project fetch Unsucceffull")
         console.log(error);
      })
     }
