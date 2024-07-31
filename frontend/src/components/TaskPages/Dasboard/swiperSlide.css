@@ -1,0 +1,16 @@
+.swiper-pagination-bullet {
+    background-color: grey;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: darkviolet;
+    border-radius: 9999px;
+    width: 40px;
+    height: 10px;
+    margin: 0 5px;
+}
+
+.swiper-pagination {
+    position: initial;
+}
