@@ -14,13 +14,15 @@ var corsOptions = {
   };
   app.use(cors(corsOptions));
 
+if (!process.env.DATABASE_URL) {
+    console.error('DATABASE_URL environment variable is not set');
+    process.exit(1);
+  }
   
 const db = require('./configs/database');
-db.authenticate().then(() => {
-  console.log('Database connected...');
-}).catch(err => {
-  console.log('Error: ' + err);
-})
+db.authenticate()
+  .then(() => console.log('Database connected...'))
+  .catch(err => console.log('Unable to connect to the database:', err));
 
 app.get("/", (req, res) => {
   res.json({ message: "Welcome to Task Manage App" });
