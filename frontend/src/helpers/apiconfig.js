@@ -1,4 +1,4 @@
-const baseURL = "http://localhost:6543";
+const baseURL = "http://localhost:4000";
 
 function getConfig(URL) {
     var config = {
