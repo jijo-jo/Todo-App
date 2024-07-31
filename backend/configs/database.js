@@ -35,6 +35,7 @@ const db = new Sequelize(
         acquire:dbConfig.pool.acquire,
         idle: dbConfig.pool.idle
     }
+
 }
 );
 module.exports = db;
