@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const SERVER_URL = "http://localhost:4000"
+const SERVER_URL = "https://todo-app-backend-jade.vercel.app"
 
 const apiClient = axios.create({
     baseURL: SERVER_URL,

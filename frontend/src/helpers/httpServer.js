@@ -1,6 +1,6 @@
 import Axios from "axios";
 
-const baseURL = "http://localhost:4000";
+const baseURL = "https://todo-app-backend-jade.vercel.app";
 
 let authToken = localStorage.getItem("accessToken");
 

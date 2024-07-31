@@ -1,4 +1,4 @@
-const baseURL = "http://localhost:4000";
+const baseURL = "https://todo-app-backend-jade.vercel.app";
 
 function getConfig(URL) {
     var config = {

@@ -6,7 +6,7 @@ const ProjectAddModal = ({ isOpen, onClose, onSubmit }) => {
     const handleChange = (e) => {
         const { name, value } = e.target;
         setProjectDetails({ ...projectDetails, [name]: value });
-      };
+    };
 
     if (!isOpen) return null;
 
@@ -31,7 +31,7 @@ const ProjectAddModal = ({ isOpen, onClose, onSubmit }) => {
                         className="w-full px-8 py-4 rounded-lg font-medium bg-gray-100 border border-gray-200 placeholder-gray-500 text-sm focus:outline-none focus:border-gray-400 focus:bg-white"
                         type="text"
                         name="pdesc"
-                        placeholder="Project Name"
+                        placeholder="Project Description"
                         value={projectDetails.pdesc}
                         onChange={handleChange}
                     />
@@ -71,7 +71,11 @@ const ProjectAddModal = ({ isOpen, onClose, onSubmit }) => {
                     </button>
                     <button
                         className="bg-blue-500 text-white px-4 py-2 rounded"
-                        onClick={() => onSubmit(projectDetails)}
+                        onClick={() => {
+                            onSubmit(projectDetails)
+                            setProjectDetails({ "pname": "", "pdesc": "", "dofstart": "", "doofend": "" })
+                        }
+                        }
                     >
                         Submit
                     </button>
